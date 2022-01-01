@@ -19,26 +19,13 @@
 .nav__link:first-child {
     margin-left: 0px;
 }
-.header__search {
-    width: 2rem;
-    height: 2rem;
-    background: none;
-    border: none;
-    outline: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 2.8rem;
-}
 .header__block {
     display: flex;
     align-items: center;
 }
-.search__icon {
-    width: 1.7rem;
-    height: 1.7rem;
-}
+
 .user__icon {
     width: 2.4rem;
     height: 2.4rem;
+    margin-left: 2.8rem;
 }

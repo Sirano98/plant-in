@@ -1,0 +1,14 @@
+.navigation {
+    display: flex;
+    align-items: center;
+}
+.navigation__text {
+    color: #91A0B6;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    margin-right: 0.8rem;
+}
+.navigation > * {
+    margin-right: 0.8rem;
+}

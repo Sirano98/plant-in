@@ -1,0 +1,17 @@
+.banner {
+    display: flex;
+    background: rgba(4, 191, 148, 0.16);
+    border-radius: 16px;
+}
+.banner__title {
+    color: #04BF94;
+    font-weight: 800;
+    font-size: 3.2rem;
+    line-height: 4.8rem;
+}
+.banner__text {
+    color: #242424;
+    font-weight: bold;
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+}

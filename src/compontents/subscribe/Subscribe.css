@@ -54,4 +54,11 @@
     font-size: 1.6rem;
     line-height: 24px;
     padding: 0.8rem 3.2rem;
+    transition: all 0.3s linear;
+}
+.subscribe__button:hover {
+    box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.75);
+}
+.subscribe__button:active {
+    background: #03daa7;
 }

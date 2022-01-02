@@ -16,6 +16,12 @@
     text-decoration: none;
     margin-left: 2.4rem;
 }
+.nav__link:hover {
+    text-decoration: underline;
+}
+.nav__link:active {
+    color: #91A0B6;
+}
 .nav__link:first-child {
     margin-left: 0px;
 }

@@ -1,5 +1,6 @@
 import { Fragment } from 'react';
 import { Banner } from '../banner/Banner';
+import { Footer } from '../footer/Footer';
 import { Header } from '../header/Header';
 import { Interesting } from '../interesting/Interesting';
 import { Navigation } from '../navigation/Navigation';
@@ -18,6 +19,7 @@ function App() {
                     <News />
                     <Top />
                     <Interesting />
+                    <Footer />
                 </main>
             </div>
         </Fragment>

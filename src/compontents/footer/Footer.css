@@ -1,0 +1,31 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10rem 0rem 8rem;
+}
+.footer__list {
+    list-style: none;
+    display: flex;
+}
+.list__item {
+    padding: 0rem 2.4rem;
+}
+.list__item:nth-child(1n) {
+    border-right: 1px solid #91A0B6;
+}
+.list__item:last-child {
+    border-right: none;
+}
+.footer__link {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    color: #91A0B6;
+    text-decoration: none;
+}
+.list__item:hover .footer__link {
+    text-decoration: underline;
+}
+.list__item:active .footer__link {
+    color: #000000;
+}

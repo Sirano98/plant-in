@@ -1,0 +1,7 @@
+.top {
+    display: flex;
+    margin: 0rem -1.5rem;
+}
+.top > .post {
+    flex-basis: 50%;
+}

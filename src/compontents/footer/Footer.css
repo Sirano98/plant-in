@@ -29,3 +29,8 @@
 .list__item:active .footer__link {
     color: #000000;
 }
+.footer__text {
+    font-size: 14px;
+    line-height: 20px;
+    color: #91A0B6;
+}

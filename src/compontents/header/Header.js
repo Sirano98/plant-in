@@ -1,11 +1,15 @@
+import { useState } from "react/cjs/react.development";
 import "./Header.css";
 
 export const Header = () => {
+
+    const [mobileMenu, setMobileMenu] = useState(false);
+
     return (
         <header className="header">
             <div className="container">
                 <div className="header__inner">
-                    <nav className="header__nav">
+                    <nav className={`header__nav ${mobileMenu ? 'header__nav-active' : ''}`}>
                         <a href="#" className="nav__link">Discover</a>
                         <a href="#" className="nav__link">My Plants</a>
                         <a href="#" className="nav__link">Diseases</a>
@@ -41,7 +45,7 @@ export const Header = () => {
                                 </defs>
                             </svg>
                         </div>
-                        <button className="burger">
+                        <button className={`burger ${mobileMenu ? 'burger-active' : ''}`} onClick={() => setMobileMenu(state => !state)}>
                             <span className="burger__item"></span>
                         </button>
                     </div>

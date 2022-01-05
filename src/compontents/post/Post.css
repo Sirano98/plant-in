@@ -7,6 +7,9 @@
 .img__wrapper {
     margin-bottom: 1.6rem;
 }
+.post__img {
+    width: 100%;
+}
 .post__date {
     color: #ADB8C8;
     font-size: 1.6rem;
@@ -24,4 +27,19 @@
     color: #78787A;
     font-size: 1.6rem;
     line-height: 2.4rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+}
+@media (max-width: 556px) {
+    .post {
+        flex-basis: 100% !important;
+        margin: 1.8rem 0rem !important;
+     }
+}
+@media (max-width: 400px) {
+    .post {
+        margin: 1.4rem 0rem !important;
+    }
 }

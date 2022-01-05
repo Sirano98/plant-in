@@ -5,3 +5,30 @@
     font-size: 1rem;
     margin: 0rem -1.5rem;
 }
+@media (max-width: 947px) {
+    .interesting > *:not(.subscribe) {
+        margin: 2.8rem 1.3rem;
+    }
+    .interesting {
+        margin: 0rem -1.3rem;
+    }
+}
+@media (max-width: 831px) {
+    .interesting > *:not(.subscribe) {
+        flex-basis: 46%;
+    }
+}
+@media (max-width: 702px) {
+    .interesting > *:not(.subscribe) {
+        margin: 2.8rem 1rem;
+    }
+    .interesting {
+        margin: 0rem -1rem;
+    }
+}
+@media (max-width: 556px) {
+    .interesting {
+        margin: 0rem;
+        justify-content: center;
+    }
+}

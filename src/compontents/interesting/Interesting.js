@@ -3,6 +3,7 @@ import "./Interesting.css";
 import articleImg from "../../assets/img/article_image-interesting.png";
 import { Subscribe } from "../subscribe/Subscribe";
 import { Fragment } from "react";
+import { Loader } from "../loader/Loader";
 
 export const Interesting = () => {
     return (
@@ -23,6 +24,7 @@ export const Interesting = () => {
                 <Post img={articleImg} />
                 <Post img={articleImg} />
                 <Post img={articleImg} />
+                <Loader />
             </section>
         </Fragment>
     )

@@ -19,8 +19,8 @@ function App() {
                     <News />
                     <Top />
                     <Interesting />
-                    <Footer />
                 </main>
+                <Footer />
             </div>
         </Fragment>
     );

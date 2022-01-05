@@ -9,6 +9,32 @@
     line-height: 2.4rem;
     margin-right: 0.8rem;
 }
+.navigation__text-mobile {
+    display: none;
+}
+.navigation__icon-mobile {
+    display: none;
+    transform: rotate(180deg);
+}
 .navigation > * {
     margin-right: 0.8rem;
+}
+@media (max-width: 750px) {
+    .navigation {
+        margin-top: 8rem;
+    }
+}
+@media (max-width: 343px) {
+    .navigation__text {
+        display: none;
+    }
+    .navigation__text-mobile {
+        display: inline;
+    }
+    .navigation__icon {
+        display: none;
+    }
+    .navigation__icon-mobile {
+        display: inline;
+    }
 }

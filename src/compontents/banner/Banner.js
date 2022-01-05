@@ -6,6 +6,7 @@ export const Banner = () => {
             <div className="banner__content">
                 <p className="banner__title">Stay always tuned with planting trends</p>
                 <p className="banner__text">Current temperature is: {24}°C</p>
+                <p className="banner__text banner__text-mobile">Tips &#38; Tricks selected specially for you!</p>
                 <div className="input__wrapper">
                     <input className="banner__input" id="banner__input" placeholder="Search" />
                     <button className="search__button search__button-banner">

@@ -24,6 +24,7 @@
 }
 .news {
     display: flex;
+    flex-direction: column;
 }
 .news > * {
     flex-basis: 100%;

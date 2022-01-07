@@ -1,7 +1,7 @@
 .banner {
     display: flex;
     border-radius: 1.6rem;
-    background: rgba(4, 191, 148, 0.16) url("../../assets/img/bannerImg.png") 100% 100% no-repeat;
+    background: rgba(4, 191, 148, 0.16) url("../../../public/assets/img/bannerImg.png") 100% 100% no-repeat;
     margin: 4.8rem 0rem ;
 }
 .banner__content {

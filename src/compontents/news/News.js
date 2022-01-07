@@ -1,25 +1,33 @@
 import { Post } from "../post/Post";
-import "./News.css";
-import img from "../../assets/img/article_image-news.png"
-import { Fragment } from "react";
+import { Fragment, useState, useEffect } from "react";
 import { Loader } from "../loader/Loader";
+import PostService from "../../services/post-service";
+import "./News.css";
 
 export const News = () => {
+
+    const postService = new PostService();
+    const [posts, setPosts] = useState([]);
+    const [load, setLoad] = useState(true);
+
+    useEffect(() => {
+        postService.getNews().then(res => {
+            setPosts([...posts, ...res])
+            setLoad(false)
+        })
+    }, [])
+
     return (
         <Fragment>
             <div className="news__flag">New</div>
             <section className="news">
-                {/* <article className="post">
-                    <div className="img__wrapper">
-                        <img src={img} alt="post img" className="post__img" />
-                    </div>
-                    <div className="post__content">
-                        <p className="post__date">{"Feb " + 23} · {8} min read</p>
-                        <p className="post__title">{"Tips & Tricks For Cutting"}</p>
-                        <p className="post__text">Pruning, like any other skill, requires knowing what you are doing to achieve success. The old idea that anyone with a chain saw or a pruning saw can be a landscape pruner is far from the truth. More trees are killed or ruined each year from improper pruning than by pests. Remember that pruning is the removal or...</p>
-                    </div>
-                </article> */}
-                <Loader />
+                {
+                    load
+                        ? <Loader />
+                        : posts.map(({ img, date, time, title, text, id }, index) => {
+                            return <Post img={img} date={date} time={time} title={title} text={text} key={id + index} />
+                        })
+                }
             </section>
         </Fragment>
     )

@@ -10,11 +10,12 @@
     margin: 2.8rem 1.5rem;
     padding: 2.4rem;
     padding-right: 0rem;
+    order: 7;
 }
 .subscribe::after {
     content: "";
     position: absolute;
-    background: url("../../assets/img/subscribe.png") no-repeat ;
+    background: url("../../../public/assets/img/subscribe.png") no-repeat ;
     width: 34.8rem;
     height: 26.1rem;
     top: -9px;
@@ -83,6 +84,11 @@
         margin: 2.8rem 1.3rem;
     }
 }
+@media (max-width: 831px) {
+    .subscribe {
+        order: 5;
+    }
+}
 @media (max-width: 770px) {
     .subscribe {
         padding: 20px;
@@ -109,6 +115,11 @@
     .subscribe {
         margin: 1.8rem 0rem;
     }
+}
+@media (max-width: 556px) {
+   .subscribe {
+       order: 4;
+   }
 }
 @media (max-width: 480px) {
     .subscribe {

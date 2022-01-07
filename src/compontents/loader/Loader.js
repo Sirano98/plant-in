@@ -1,8 +1,8 @@
 import "./Loader.css";
 
-export const Loader = () => {
+export const Loader = ({ number }) => {
     return (
-        <div className="loader">
+        <div className="loader" style={{ order: number ? number : "" }}>
             <span className="loader__img"></span>
             <div className="loader__wrapper">
                 <span className="loader__date"></span>

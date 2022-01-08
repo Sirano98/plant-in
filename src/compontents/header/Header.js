@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { NavLink } from "react-router-dom";
 import "./Header.css";
 
 export const Header = () => {
@@ -10,12 +11,12 @@ export const Header = () => {
             <div className="container">
                 <div className="header__inner">
                     <nav className={`header__nav ${mobileMenu ? 'header__nav-active' : ''}`}>
-                        <a href="#" className="nav__link">Discover</a>
-                        <a href="#" className="nav__link">My Plants</a>
-                        <a href="#" className="nav__link">Diseases</a>
-                        <a href="#" className="nav__link">Blog</a>
-                        <a href="#" className="nav__link">FAQ</a>
-                        <a href="#" className="nav__link">Contact Us</a>
+                        <NavLink className="nav__link" to="/not-found">Discover</NavLink>
+                        <NavLink className="nav__link" to="/not-found">My Plants</NavLink>
+                        <NavLink className="nav__link" to="/not-found">Diseases</NavLink>
+                        <NavLink className="nav__link" to="/not-found">Blog</NavLink>
+                        <NavLink className="nav__link" to="/not-found">FAQ</NavLink>
+                        <NavLink className="nav__link" to="/not-found">Contact Us</NavLink>
                     </nav>
                     <div className="logo header__logo">
                         <svg viewBox="0 0 18 24" fill="none" className="logo__icon">

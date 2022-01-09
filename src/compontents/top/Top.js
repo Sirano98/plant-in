@@ -34,13 +34,3 @@ export const Top = () => {
         </Fragment>
     )
 }
-
-// {
-//     load ?
-//         <Loader /> :
-//         {
-//             posts.map(({ img, date, time, title, text, id }, index) => {
-//                 return <Post img={img} date={date} time={time} title={title} text={text} key={id + index} />
-//             })
-//         }
-// }

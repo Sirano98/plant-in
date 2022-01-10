@@ -1,8 +1,7 @@
 import { Post } from "../post/Post";
 import { Subscribe } from "../subscribe/Subscribe";
-import React, { Fragment, useState, useEffect } from "react";
+import React, { Fragment } from "react";
 import { Loader } from "../loader/Loader";
-import PostService from "../../services/post-service";
 import "./Interesting.css";
 
 export const Interesting = React.memo(({ posts, load }) => {

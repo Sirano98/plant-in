@@ -9,8 +9,6 @@ export const Interesting = React.memo(({ posts, load }) => {
     let order = 0;
 
     const showPosts = (posts) => {
-        console.log(posts);
-        console.log(load);
         return posts.map(({ img, date, time, title, text }, index) => {
             order = 1 + index;
             return <Post img={img} date={date} time={time} title={title} text={text} key={order} number={order} />

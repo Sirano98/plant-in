@@ -1,13 +1,15 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
+import { SearchForm } from "../search-form/Search-form";
 import "./Header.css";
 
 export const Header = () => {
 
     const [mobileMenu, setMobileMenu] = useState(false);
+    const [searchInput, setSearchInput] = useState(false);
 
     return (
-        <header className="header">
+        <header className={`header ${searchInput ? 'header-activeSearch' : ''}`}>
             <div className="container">
                 <div className="header__inner">
                     <nav className={`header__nav ${mobileMenu ? 'header__nav-active' : ''}`}>
@@ -26,7 +28,8 @@ export const Header = () => {
                         <h1 className="logo__text">PlantIn</h1>
                     </div>
                     <div className="header__block">
-                        <button className="search__button">
+                        <SearchForm />
+                        <button className={`search__button ${searchInput ? 'search__button-hide' : ''}`} onClick={() => setSearchInput(state => !state)}>
                             <svg viewBox="0 0 19 19" fill="none" className="search__icon">
                                 <path d="M13 13L18 18M15 8C15 11.866 11.866 15 8 15C4.13401 15 1 11.866 1 8C1 4.13401 4.13401 1 8 1C11.866 1 15 4.13401 15 8Z" stroke="#C5D1DB" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                             </svg>

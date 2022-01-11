@@ -28,39 +28,6 @@
 .banner__text-mobile {
     display: none;
 }
-.input__wrapper {
-    position: relative;
-}
-.banner__input {
-    border: none;
-    outline: none;
-    width: 52.2rem;
-    background: #FFFFFF;
-    box-shadow: 0px 0.470434px 2.21381px rgb(0 0 0 / 2%);
-    border-radius: 1.2rem;
-    color: #91A0B6;
-    font-size: 1.6rem;
-    line-height: 2.4rem;
-    padding: 1.6rem 5.6rem 1.6rem 1.6rem;
-}
-.banner__input::placeholder {
-    color: #91A0B6;
-}
-.search__button-banner {
-    width: 2.4rem !important;
-    height: 2.4rem !important;
-    position: absolute;
-    top: 50%;
-    right: 2rem;
-    transform: translateY(-50%);
-}
-.icon__wrapper {
-    width: 24px;
-    height: 24px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 @media (max-width: 757px) {
     .banner {
         justify-content: center;
@@ -74,7 +41,7 @@
     .input__wrapper {
         width: 80%;
     }
-    .banner__input {
+    .search__input {
         width: 100%;
     }
 }
@@ -98,7 +65,7 @@
     .input__wrapper {
         width: 100%;
     }
-    .banner__input {
+    .search__input {
         font-size: 14px;
         line-height: 20px;
         padding: 1rem 1.6rem;
